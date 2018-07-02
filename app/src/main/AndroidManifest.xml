@@ -10,19 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SongsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-
         </activity>
         <activity android:name=".ArtistActivity" />
         <activity android:name=".PlaylistActivity">
         </activity>
         <activity android:name=".PlayingActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".SettingsActivity"/>
+        <activity android:name=".SettingsActivity">
+        </activity>
     </application>
 
 </manifest>

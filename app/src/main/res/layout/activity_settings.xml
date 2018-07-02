@@ -3,6 +3,151 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C4CDDE">
+    android:background="#181818"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:id="@+id/settingsHeading"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/settingsHeading"
+        android:layout_marginTop="8dp"
+        android:id="@+id/margin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings 1"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="36dp"
+        android:id="@+id/settings1"
+        android:layout_below="@id/margin"/>
+    <ToggleButton
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:background="@drawable/custom_togglebtn"
+        android:layout_alignTop="@id/settings1"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentEnd="true"
+        android:textOff=""
+        android:textOn=""
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings 2"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/settings1"
+        android:id="@+id/settings2"/>
+    <ToggleButton
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:background="@drawable/custom_togglebtn"
+        android:layout_alignTop="@id/settings2"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentEnd="true"
+        android:textOff=""
+        android:textOn=""
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings 3"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/settings3"
+        android:layout_below="@id/settings2"/>
+
+    <ToggleButton
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/settings3"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/custom_togglebtn"
+        android:textOff=""
+        android:textOn=""
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/settings3"
+        android:layout_marginTop="16dp"
+        android:id="@+id/margin1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/margin1"
+        android:id="@+id/aboutHeading"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About RTS Music and Privacy"
+        android:background="#181818"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/aboutHeading"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:id="@+id/aboutBtn1"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Music Terms and Conditons"
+        android:background="#181818"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/aboutBtn1"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:id="@+id/aboutBtn2"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acknowledgements"
+        android:background="#181818"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/aboutBtn2"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:id="@+id/aboutBtn3"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/aboutBtn3"
+        android:layout_marginTop="16dp"
+        android:id="@+id/margin3"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/margin3"
+        />
 
 </RelativeLayout>

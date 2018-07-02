@@ -2,15 +2,108 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Library"
+    android:textColor="@android:color/white"
+    android:textSize="30sp"
+    android:padding="16dp"
+    android:id="@+id/libraryLabel"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/libraryLabel"
+        android:id="@+id/margin1"
+        android:layout_marginStart="16dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playlist"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/margin1"
+        android:padding="16dp"
+        android:id="@+id/playlistBtn"
+        android:background="@android:color/black"
+        android:textAllCaps="false"
+        android:textAlignment="viewStart"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/playlistBtn"
+        android:id="@+id/margin2"
+        android:layout_marginStart="16dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Artist"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/margin2"
+        android:padding="16dp"
+        android:id="@+id/artistBtn"
+        android:background="@android:color/black"
+        android:textAllCaps="false"
+        android:textAlignment="viewStart"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/artistBtn"
+        android:id="@+id/margin3"
+        android:layout_marginStart="16dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Album"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/margin3"
+        android:padding="16dp"
+        android:id="@+id/albumBtn"
+        android:background="@android:color/black"
+        android:textAllCaps="false"
+        android:textAlignment="viewStart"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/albumBtn"
+        android:id="@+id/margin4"
+        android:layout_marginStart="16dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Songs"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/margin4"
+        android:padding="16dp"
+        android:id="@+id/songsBtn"
+        android:background="@android:color/black"
+        android:textAllCaps="false"
+        android:textAlignment="viewStart"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/songsBtn"
+        android:id="@+id/margin5"
+        android:layout_marginStart="16dp"/>
 
     <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
-        app:itemIconTint="@android:color/white"
+        android:background="#181818"
+        app:itemIconTint="@color/colorAccent"
         app:itemTextColor="@android:color/white"
-        app:menu="@menu/bottomnavigation" />
+        app:menu="@menu/bottomnavigation"
+        android:id="@+id/menuNavigation"/>
 
 </RelativeLayout>
