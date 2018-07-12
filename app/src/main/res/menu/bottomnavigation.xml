@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-    android:title="Playlist"
-        android:icon="@mipmap/ic_launcher_round"/>
+        android:id="@+id/homeMenu"
+        android:enabled="true"
+        android:icon="@mipmap/homeicon_foreground"
+        android:title="Home" />
     <item
-        android:title="Artist"
-        android:icon="@mipmap/ic_launcher_round"/>
+        android:id="@+id/playingMenu"
+        android:icon="@mipmap/musicicon"
+        android:title="Now Playing" />
     <item
-        android:title="Songs"
-        android:icon="@mipmap/ic_launcher_round"
-        android:enabled="true" />
-    <item
-        android:title="Settings"
-        android:icon="@mipmap/ic_launcher_round"/>
+        android:id="@+id/settingMenu"
+        android:icon="@mipmap/settingicon"
+        android:title="Settings" />
 </menu>
