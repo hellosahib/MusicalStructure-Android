@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Settings"
+        android:text="@string/settings"
         android:textSize="30sp"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings 1"
+        android:text="@string/settings_1"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:layout_marginStart="50dp"
@@ -44,7 +44,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings 2"
+        android:text="@string/settings_2"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:layout_marginStart="50dp"
@@ -63,7 +63,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings 3"
+        android:text="@string/settings_3"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:layout_marginStart="50dp"
@@ -90,48 +90,33 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="About"
+        android:text="@string/about"
         android:textSize="24sp"
         android:textColor="@color/colorAccent"
         android:layout_below="@id/margin1"
         android:id="@+id/aboutHeading"
         android:padding="16dp"/>
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="About RTS Music and Privacy"
-        android:background="#181818"
-        android:textColor="@android:color/white"
+        android:text="@string/about_rts_music_and_privacy"
         android:layout_below="@id/aboutHeading"
-        android:textAlignment="textStart"
-        android:textAllCaps="false"
         android:id="@+id/aboutBtn1"
-        android:padding="16dp"
-        />
+        style="@style/ButtonSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="About Music Terms and Conditons"
-        android:background="#181818"
-        android:textColor="@android:color/white"
+        android:text="@string/about_music_terms_and_conditons"
         android:layout_below="@id/aboutBtn1"
-        android:textAlignment="textStart"
-        android:textAllCaps="false"
         android:id="@+id/aboutBtn2"
-        android:padding="16dp"
-        />
+        style="@style/ButtonSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Acknowledgements"
-        android:background="#181818"
-        android:textColor="@android:color/white"
+        android:text="@string/acknowledgements"
         android:layout_below="@id/aboutBtn2"
-        android:textAlignment="textStart"
-        android:textAllCaps="false"
         android:id="@+id/aboutBtn3"
-        android:padding="16dp"
-        />
+        style="@style/ButtonSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"

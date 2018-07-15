@@ -1,3 +1,48 @@
 <resources>
     <string name="app_name">MusicPlayer</string>
+    <!-- Songs Names -->
+    <string name="song1">I Want Something just like This</string>
+    <string name="song2">Hymm For Weekend</string>
+    <string name="song3">Waka Waka</string>
+    <string name="song4">Happy Birthday</string>
+    <string name="song5">Perfect</string>
+    <string name="song6">Love me like you do</string>
+    <string name="song7">Capital Letters</string>
+    <string name="song8">Dont let me down</string>
+    <string name="song9">Let Me</string>
+    <string name="song10">Hold Onn</string>
+    <string name="song11">Havana</string>
+    <!-- Artist Names -->
+    <string name="artist1">Justin Bieber</string>
+    <string name="artist2">Zayn</string>
+    <string name="artist3">Coldplay</string>
+    <string name="artist4">ChainSmoker</string>
+    <!-- Albums Name -->
+    <string name="album1">Album 1</string>
+    <string name="album2">Album 2</string>
+    <string name="album3">Album 3</string>
+    <string name="album4">Album 4</string>
+    <!-- Playlist Names -->
+    <string name="playlist1">Favourites</string>
+    <string name="playlist2">Light Hearted</string>
+    <string name="playlist3">Party Songs</string>
+    <string name="playlist4">Love In The Air</string>
+<!-- XML String -->
+    <string name="library">Library</string>
+    <string name="playlist">Playlist</string>
+    <string name="artist">Artist</string>
+    <string name="album">Album</string>
+    <string name="songs">Songs</string>
+    <string name="albumart">AlbumArt</string>
+    <string name="back_to_you">Back To You</string>
+    <string name="album_name">Album Name</string>
+    <string name="settings">Settings</string>
+    <string name="settings_1">Settings 1</string>
+    <string name="settings_2">Settings 2</string>
+    <string name="settings_3">Settings 3</string>
+    <string name="about">About</string>
+    <string name="about_rts_music_and_privacy">About RTS Music and Privacy</string>
+    <string name="about_music_terms_and_conditons">About Music Terms and Conditons</string>
+    <string name="acknowledgements">Acknowledgements</string>
+    <string name="songimagelabel">SongImageLabel</string>
 </resources>

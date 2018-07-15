@@ -1,5 +1,6 @@
 package tech.rtsproduction.musicplayer;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,7 +22,7 @@ public class PlayingActivity extends AppCompatActivity {
         downBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                startActivity(new Intent(PlayingActivity.this,MainActivity.class));
             }
         });
 

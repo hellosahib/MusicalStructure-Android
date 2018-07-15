@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,7 @@ public class SongActivity extends AppCompatActivity {
 
     ListView listView;
     BottomNavigationView navigationView;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,30 +29,24 @@ public class SongActivity extends AppCompatActivity {
 
         listView = findViewById(R.id.listviewArtist);
         navigationView = findViewById(R.id.menuNavigationMusic);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Songs");
 
-        ArrayList<String> artistList = new ArrayList<>();
-        artistList.add("I Want Something just like This");
-        artistList.add("Hymm For Weekend");
-        artistList.add("Waka Waka");
-        artistList.add("Happy Birthday");
-        artistList.add("Perfect");
-        artistList.add("Love me like you do");
-        artistList.add("Capital Letters");
-        artistList.add("Dont let me down");
-        artistList.add("Let Me ");
-        artistList.add("Hold Onn");
-        artistList.add("Cabana");
+        ArrayList<SongsData> artistList = new ArrayList<>();
+        artistList.add(new SongsData(getString(R.string.song1),"ChainSmoker&Coldplay","2017"));
+        artistList.add(new SongsData(getString(R.string.song2),"Coldplay","2015"));
+        artistList.add(new SongsData(getString(R.string.song3),"Sale el Sol","2010"));
+        artistList.add(new SongsData(getString(R.string.song4),"Unknown","2016"));
+        artistList.add(new SongsData(getString(R.string.song5),"Divide","2017"));
+        artistList.add(new SongsData(getString(R.string.song6),"Fifty Shades of Grey","2015"));
+        artistList.add(new SongsData(getString(R.string.song7),"Fifty Shades Freed","2018"));
+        artistList.add(new SongsData(getString(R.string.song8),"Collage","2016"));
+        artistList.add(new SongsData(getString(R.string.song9),"Zayn","2018"));
+        artistList.add(new SongsData(getString(R.string.song10),"Chord Overstreet","2017"));
+        artistList.add(new SongsData(getString(R.string.song11),"Camilla","2018"));
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,artistList){
-            @Override
-            public View getView(int position, View convertView, ViewGroup parent) {
-                View view =super.getView(position, convertView, parent);
-                TextView textView= view.findViewById(android.R.id.text1);
-                textView.setTextColor(Color.WHITE);
-                return view;
-            }
-        };
-
+        SongsAdapter adapter = new SongsAdapter(this,artistList);
         listView.setAdapter(adapter);
 
         navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

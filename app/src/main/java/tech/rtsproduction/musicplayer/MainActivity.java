@@ -17,15 +17,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_songs);
+        setContentView(R.layout.activity_main);
 
         playlistBtn = findViewById(R.id.playlistBtn);
         songsBtn = findViewById(R.id.songsBtn);
         artistBtn = findViewById(R.id.artistBtn);
         albumBtn = findViewById(R.id.albumBtn);
         navigationView = findViewById(R.id.menuNavigationHome);
-
-        startActivity(new Intent(MainActivity.this, PlayingActivity.class));
 
         navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -44,35 +42,26 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
 
-        artistBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ArtistActivity.class));
-            }
-        });
-
-        playlistBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    public void buttonOnClick(View v){
+        switch (v.getId()){
+            case R.id.playlistBtn:{
                 startActivity(new Intent(MainActivity.this, PlaylistActivity.class));
+                break;
             }
-        });
-
-        songsBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            case R.id.songsBtn:{
                 startActivity(new Intent(MainActivity.this, SongActivity.class));
+                break;
             }
-        });
-
-        albumBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            case R.id.artistBtn:{
+                startActivity(new Intent(MainActivity.this, ArtistActivity.class));
+                break;
+            }
+            case R.id.albumBtn:{
                 startActivity(new Intent(MainActivity.this, AlbumActivity.class));
+                break;
             }
-        });
-
-
+        }
     }
 }

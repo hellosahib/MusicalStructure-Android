@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,7 @@ public class AlbumActivity  extends AppCompatActivity {
 
     ListView listView;
     BottomNavigationView navigationView;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,23 +29,17 @@ public class AlbumActivity  extends AppCompatActivity {
 
         listView = findViewById(R.id.listviewArtist);
         navigationView = findViewById(R.id.menuNavigationMusic);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Albums");
 
-        ArrayList<String> artistList = new ArrayList<>();
-        artistList.add("Album 1");
-        artistList.add("Album 2");
-        artistList.add("Album 3");
-        artistList.add("Album 4");
+        ArrayList<SongsData> albumList = new ArrayList<>();
+        albumList.add(new SongsData("",getString(R.string.album1),"2016"));
+        albumList.add(new SongsData("",getString(R.string.album2),"2016"));
+        albumList.add(new SongsData("",getString(R.string.album3),"2017"));
+        albumList.add(new SongsData("",getString(R.string.album4),"2018"));
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,artistList){
-            @Override
-            public View getView(int position, View convertView, ViewGroup parent) {
-                View view =super.getView(position, convertView, parent);
-                TextView textView=view.findViewById(android.R.id.text1);
-                textView.setTextColor(Color.WHITE);
-                return view;
-            }
-        };
-
+        SongsAdapter adapter = new SongsAdapter(this,albumList);
         listView.setAdapter(adapter);
 
         navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

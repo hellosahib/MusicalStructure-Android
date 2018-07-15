@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/libraryLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/library"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <View
+        android:id="@+id/margin1"
+        android:layout_below="@id/libraryLabel"
+        style="@style/ViewMain" />
+
+    <Button
+        android:id="@+id/playlistBtn"
+        android:layout_below="@id/margin1"
+        android:text="@string/playlist"
+        style="@style/ButtonMain"
+        android:onClick="buttonOnClick"/>
+
+    <View
+        android:id="@+id/margin2"
+        android:layout_below="@id/playlistBtn"
+        style="@style/ViewMain"/>
+
+    <Button
+        android:id="@+id/artistBtn"
+        android:layout_below="@id/margin2"
+        android:text="@string/artist"
+        style="@style/ButtonMain"
+        android:onClick="buttonOnClick"/>
+
+    <View
+        android:id="@+id/margin3"
+        android:layout_below="@id/artistBtn"
+        style="@style/ViewMain"/>
+
+    <Button
+        android:id="@+id/albumBtn"
+        android:layout_below="@id/margin3"
+        android:text="@string/album"
+        style="@style/ButtonMain"
+        android:onClick="buttonOnClick"/>
+
+    <View
+        android:id="@+id/margin4"
+        android:layout_below="@id/albumBtn"
+        style="@style/ViewMain"/>
+
+    <Button
+        android:id="@+id/songsBtn"
+        android:layout_below="@id/margin4"
+        android:text="@string/songs"
+        style="@style/ButtonMain"
+        android:onClick="buttonOnClick"/>
+
+    <View
+        android:id="@+id/margin5"
+        android:layout_below="@id/songsBtn"
+        style="@style/ViewMain"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/menuNavigationHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#181818"
+        app:itemIconTint="@color/colorAccent"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bottomnavigation" />
+
+</RelativeLayout>
